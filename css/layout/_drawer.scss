@@ -1,11 +1,14 @@
 nav {
   height: 100vh;
   width: 20%;
-  max-width: 300px;
-  background-color: $secondary-color;
+  max-width: 280px;
+  background-color: $main-color-2;
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-box-shadow: 3px 0px 8px 0px rgba(173,173,173,1);
+  -moz-box-shadow: 3px 0px 8px 0px rgba(173,173,173,1);
+  box-shadow: 3px 0px 8px 0px rgba(173,173,173,1);
 }
 
 #hamburger-icon {
@@ -13,22 +16,21 @@ nav {
 }
 
 label[for="hamburger-icon"] {
-  width: 50px;
-  height: 20px;
+  width: 20px;
+  height: 14px;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
   background-color: transparent;
   z-index: 100;
 
   span {
     height: 2px;
-    width: 40%;
+    width: 100%;
     display: block;
     background-color: black;
     position: absolute;
-    top: 9px;
-    left: 30%;
+    top: 6px;
   }
 
   span:first-child {
@@ -36,6 +38,39 @@ label[for="hamburger-icon"] {
   }
 
   span:last-child {
-    top: 18px
+    top: 12px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.drawer-title {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  color: $accent-color-1;
+
+  h1 {
+    padding-left: 60px;
+    margin: 0;
+  }
+}
+
+.drawer-section {
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px 0 10px 20px;
+
+    &:hover {
+      background-color: $main-color-1;
+      color: $accent-color-1;
+      cursor: pointer;
+    }
   }
 }
